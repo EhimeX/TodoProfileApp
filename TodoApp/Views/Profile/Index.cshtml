@@ -1,0 +1,15 @@
+﻿@model List<Profile>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to my profile page</h1>
+    <p>List of user Profiles</p>
+
+    @foreach (var person in Model) {
+        <div>
+            <h2>First Name: @person.FirstName </h2>
+            <h2>Last Name:  @person.LastName </h2>
+            <h3> Age: @person.Age years old </h3>
+        </div>
+        <hr/>
+    }
+</div>
